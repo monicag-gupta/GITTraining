@@ -1,0 +1,18 @@
+Git config command
+Git config
+Get and set configuration variables that control all facets of how Git looks and operates.
+You can view all of your settings and where they are coming from using:
+$ git config --list --show-origin
+Set the name:
+$ git config --global user.name "User name"
+$ git config --global user.name "Monica"
+Set the email:
+$ git config --global user.email "gupta.monicag@gmail.com"
+Set the default editor: (here visual studio code, can have notepad.exe)
+$ git config --global core.editor Vim
+The below tells default editor VS Code to wait till the next command of git is given.
+$ git config --global core.editor "code --wait"
+Set the default branch:
+$ git config --global init.defaultbranch main
+Check the setting:
+$ git config --list
