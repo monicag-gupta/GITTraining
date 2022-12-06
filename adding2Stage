@@ -1,0 +1,92 @@
+1. created TOC.txt
+Added a line: Hello
+2. git status : showed us an untracked file : TOC.txt
+3. git add TOC.txt 
+4. git Status: now TOC.txt is staged (tracked), but not committed
+5. modified TOC.txt
+Added one more line: World
+6. git status : TOC.txt is staged ; TOC.txt is modified post add
+Right now if we commit the working directory, we will get the old added file of TOC.txt (with only Hello). Why? Because we used git add before modification. 
+It means that only staged files are committed
+7. If you want the modified file to be committed, pl add it to the staged area via the add command
+
+
+
+
+Steps: Untracked Stage:
+
+PS C:\Users\hcl4m\Desktop\GitEgs> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+
+Create a file : TOC.txt in the current folder
+
+
+
+PS C:\Users\hcl4m\Desktop\GitEgs> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TOC.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+..Steps : tracked stage:
+
+
+PS C:\Users\hcl4m\Desktop\GitEgs> git add TOC.txt
+
+
+
+PS C:\Users\hcl4m\Desktop\GitEgs> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TOC.txt
+        
+        
+        
+..Steps : Add content to file:
+
+Add the content in the file TOC.txt:
+This the TOC of the files for studies
+Save the file.
+
+
+PS C:\Users\hcl4m\Desktop\GitEgs> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TOC.txt
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   TOC.txt
+
+
+
+
+
+..Steps: Adding new content to staging area :
+
+PS C:\Users\hcl4m\Desktop\GitEgs> git add TOC.txt
+
+
+PS C:\Users\hcl4m\Desktop\GitEgs> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TOC.txt
+
+
+
+
+
