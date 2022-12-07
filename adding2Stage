@@ -88,5 +88,46 @@ Changes to be committed:
 
 
 
+PS C:\Users\hcl4m\Desktop\GitEgs> git diff --staged
+diff --git a/TOC.txt b/TOC.txt 
+new file mode 100644
+index 0000000..bd487eb
+--- /dev/null
++++ b/TOC.txt
+@@ -0,0 +1 @@
++# This the TOC of the files for studies
+\ No newline at end of file
+
+
+
+
+Output:
+File a is compared with file b: 
+same file with different snapshot version
+
+100644 is the normal file mode identifier in git
+
+Index means the shah # numbers of the metadata of the two files being compared
+
+Change markers : a as --- symbol and b as +++ symbol
+
+@@ -0,0 +1 @@  signifies the chunk headers: tells how many changes were made. It is between @@. -0,0 means it’s a new file. +1 means 1 line changed in b
+
+The next line shows the actual changes made in the files. – represents older file and + represents the newer file.
+
+
+PS C:\Users\hcl4m\Desktop\GitEgs> git commit -a -m "my first commit"
+[main e356c11] my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 TOC.txt
+
+PS C:\Users\hcl4m\Desktop\GitEgs> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+
+
 
 
