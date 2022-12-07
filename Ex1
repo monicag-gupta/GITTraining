@@ -1,0 +1,18 @@
+Create a folder called learn_git_again.: Make a dir: "learn_git_again"
+>mkdir learn_git_again
+cd into the learn_git_again folder. : move inside the dir
+>cd learn_git_again
+Create a file called third.txt. : create a file in the dir
+>echo "aaa" >> third.txt
+Initialize an empty git repository. : Initialize git inside the dir
+>git init
+Add third.txt to the staging area.
+>git add third.txt
+Commit with the message "adding third.txt".
+>git commit –a –m "adding third.txt"
+Create another file called fourth.txt.
+>echo "aaa" >> fourth.txt
+Add fourth.txt to the staging area.
+>git add fourth.txt
+Commit with the message "adding fourth.txt"
+>git commit –a –m "adding fourth.txt"
