@@ -1,0 +1,30 @@
+Jane is a story writer and our friend.
+Jane has realized how git made her effective to track changes in her story project. And she wanted to spread the word about all the goodness that git offers. 
+ 
+Jane spoke about Git to her friend Jenny Webster who is also a Kid’s story writer. Jane asked Jenny to explore Git to version control her projects.
+ 
+Jenny is quite excited to get started on her git journey. She has just installed git on her personal Mac laptop. But she wished she had someone to help with next steps.
+ 
+Since by now we have learnt fairly good amount of Git concepts, let us now walk the path with Jenny and help her.
+ 
+Time to do the first-time git configuration to set-up Jenny’s git profile. 
+ 
+So, let’s configure Jenny’s user name and user email by typing:
+git config --global user.name "Jenny webster"
+git config --global user.email jennyweb@storytime.com
+
+Let’s confirm that Jenny successfully completed her first-time git setup by typing
+
+ git config --list
+
+Let’s now move into Jenny’s story project directory with name jenny-talespin and initialize git. 
+git init
+
+To confirm that git is successfully initialized, we could list the contents of our working directory to confirm that a new .git folder is created.
+ls -a
+
+Let us now add all files in the directory to the git staging area. We will finally commit the file with message "Jenny makes her first git commit".
+git add .
+
+git commit -m "Jenny makes her first git commit"
+Yay.. we could help Jenny successfully onboard with Git! 
